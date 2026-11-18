@@ -1,0 +1,2128 @@
+/* =====================================================
+   MINISUPER EL PANAMEÑITO 07
+   HOJA DE ESTILOS PRINCIPAL
+   XHTML 1.0 STRICT
+   PALETA: VERDE LIMA + AZUL + NEGRO
+   ===================================================== */
+
+
+/* =====================================================
+   1. CONFIGURACIÓN GENERAL
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #263746;
+
+    /* Fondo verde lima con tramado decorativo */
+    background-color: #D7FF00;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(7, 89, 133, 0.16) 2px,
+            transparent 2.5px
+        ),
+        repeating-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.42) 0,
+            rgba(255, 255, 255, 0.42) 2px,
+            transparent 2px,
+            transparent 18px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(7, 89, 133, 0.07) 0,
+            rgba(7, 89, 133, 0.07) 2px,
+            transparent 2px,
+            transparent 18px
+        );
+
+    background-size:
+        25px 25px,
+        100% 100%,
+        100% 100%;
+
+    background-attachment: fixed;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+a {
+    color: #075985;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #003366, #005599);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#avatar-video-container {
+    width: 350px;
+    height: 350px;
+    margin-right: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.4);
+    background-color: #000000;
+}
+
+#avatar-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.welcome-text h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.welcome-text button {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.welcome-text button:hover {
+    background-color: #cc0000;
+}
+/* ENCABEZADO PATRIÓTICO */
+#encabezado {
+    background-image:
+        linear-gradient(
+            rgba(0, 25, 65, 0.38),
+            rgba(0, 25, 65, 0.38)
+        ),
+        url("imagenes/fiestas-patrias.jpg");
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 280px;
+    width: 100%;
+}
+.banner-patrio img {
+    display: block;
+    width: 100%;
+    height: auto;
+}.cabecera-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+/* =====================================================
+   ENCABEZADO PATRIÓTICO
+   ===================================================== */
+
+#encabezado {
+    background-image:
+        linear-gradient(
+            rgba(0, 25, 65, 0.35),
+            rgba(0, 25, 65, 0.35)
+        ),
+        url("imagenes/fiestas-patrias.jpg");
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    min-height: 320px;
+
+    padding: 20px;
+}
+
+/* =====================================================
+   3. LOGO ORIGINAL DEL NIÑO MONTUNITO
+   ===================================================== */
+
+.logo {
+    flex: 0 0 210px;
+    text-align: center;
+}
+.logo img {
+    display: block;
+
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+
+    /* No añade marcos al archivo original */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+   4. NOMBRE DEL MINISÚPER
+   ===================================================== */
+
+.titulo {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.titulo h1 {
+    margin: 0;
+
+    color: #000000;
+
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.2;
+
+    letter-spacing: 1px;
+
+    /* Sombra verde lima para destacar el nombre */
+    text-shadow: 2px 2px 0 #BFFF00;
+}
+
+.titulo p {
+    margin: 12px 0;
+
+    color: #FFFFFF;
+
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.titulo .ubicacion-corta,
+.titulo .ubicacion {
+    color: #D7FF00;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   5. FOTOGRAFÍA DE LA FACHADA
+   ===================================================== */
+
+.foto-portada {
+    flex: 0 1 370px;
+    min-width: 0;
+    text-align: center;
+}
+
+.foto-portada img {
+    display: block;
+
+    width: 100%;
+    max-width: 370px;
+    height: 230px;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+    object-position: center;
+
+    /* Sin marcos añadidos por CSS */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    transition: transform 0.3s ease;
+}
+
+.foto-portada img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =====================================================
+   6. PORTADA PRINCIPAL CON FACHADA DESVANECIDA
+   ===================================================== */
+
+.portada-principal {
+    position: relative;
+
+    width: 100%;
+    min-height: 360px;
+
+    padding: 35px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #E7F7FF,
+        #D7FF00
+    );
+
+    border-bottom: 5px solid #00A8FF;
+}
+
+.fachada-fondo {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 0;
+    overflow: hidden;
+}
+
+.fachada-fondo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    opacity: 0.22;
+
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.portada-contenido {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.logo-portada {
+    display: block;
+
+    width: 190px;
+    max-width: 70%;
+    height: auto;
+
+    margin: 0 auto 15px;
+
+    object-fit: contain;
+
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.titulo-portada {
+    margin: 0 0 15px;
+
+    color: #000000;
+
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 1.25;
+
+    text-align: center;
+
+    text-shadow: 2px 2px 0 #BFFF00;
+}
+
+.portada-contenido p {
+    max-width: 750px;
+
+    margin: 0 auto 15px;
+    padding: 10px;
+
+    color: #003B64;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   7. MENÚ PRINCIPAL
+   ===================================================== */
+
+#menu {
+    width: 100%;
+
+    padding: 5px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    background: linear-gradient(
+        90deg,
+        #003B64,
+        #075985,
+        #087FC1
+    );
+
+    border-bottom: 5px solid #BFFF00;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#menu ul {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    list-style: none;
+}
+
+#menu li {
+    margin: 0;
+    padding: 0;
+}
+
+#menu a {
+    display: block;
+
+    padding: 12px 17px;
+
+    color: #FFFFFF;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+#menu a:hover,
+#menu a:focus,
+#menu a.activo {
+    color: #000000;
+    background-color: #BFFF00;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   8. CONTENIDO GENERAL
+   ===================================================== */
+
+#contenido,
+main,
+.contenido,
+.contenedor {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+h2 {
+    margin-bottom: 20px;
+
+    color: #075985;
+
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 12px;
+
+    color: #003B64;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   9. SECCIONES DE CONTENIDO
+   ===================================================== */
+
+.seccion,
+.bloque,
+.texto,
+.bienvenida {
+    width: 100%;
+
+    margin: 28px auto;
+    padding: 28px;
+
+    background-color: rgba(255, 255, 255, 0.97);
+
+    border: 2px solid #D7E8F3;
+    border-left: 7px solid #BFFF00;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 16px rgba(0, 59, 100, 0.12);
+
+    transition:
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.seccion:hover,
+.bloque:hover {
+    box-shadow: 0 8px 22px rgba(0, 59, 100, 0.17);
+}
+
+.seccion h2,
+.bloque h2 {
+    margin-top: 0;
+    padding-bottom: 12px;
+
+    color: #075985;
+
+    font-size: 28px;
+    text-align: center;
+
+    border-bottom: 3px solid #BFFF00;
+}
+
+.seccion h3,
+.bloque h3 {
+    color: #003B64;
+}
+
+.seccion p,
+.bloque p {
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   10. BIENVENIDA
+   ===================================================== */
+
+.bienvenida {
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #FFFFFF,
+        #EAF7FF
+    );
+
+    border-top: 6px solid #00A8FF;
+}
+
+.bienvenida h2 {
+    color: #075985;
+    font-size: 32px;
+}
+
+.bienvenida h3 {
+    color: #003B64;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#welcome-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #003366, #005599);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#bienvenida {
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#bienvenida video {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  background: #000;
+}
+
+#btnEntrar {
+  margin-top: 15px;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: #0b3d91;
+  border: 3px solid #d21034;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#btnEntrar:hover {
+  background: #d21034;
+}
+/* =====================================================
+   11. BOTONES INTERACTIVOS
+   ===================================================== */
+
+.boton,
+.boton-solidario,
+.enlace-boton {
+    display: inline-block;
+
+    margin: 10px 5px;
+    padding: 13px 23px;
+
+    color: #000000;
+    background-color: #BFFF00;
+
+    border: 2px solid #075985;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    text-align: center;
+    text-decoration: none;
+
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.12);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.boton:hover,
+.boton:focus,
+.boton-solidario:hover,
+.boton-solidario:focus,
+.enlace-boton:hover,
+.enlace-boton:focus {
+    color: #FFFFFF;
+    background-color: #075985;
+
+    border-color: #BFFF00;
+
+    text-decoration: none;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18);
+}
+
+.centrado {
+    text-align: center;
+}
+
+
+/* =====================================================
+   12. TARJETAS DE PRODUCTOS E INFORMACIÓN
+   ===================================================== */
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 22px;
+
+    width: 100%;
+    margin: 25px auto;
+}
+
+.tarjeta {
+    flex: 1 1 230px;
+    max-width: 320px;
+
+    padding: 22px;
+
+    background: linear-gradient(
+        145deg,
+        #FFFFFF,
+        #EFF9FF
+    );
+
+    border: 2px solid #D7E8F3;
+    border-top: 6px solid #00A8FF;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 14px rgba(0, 59, 100, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+
+    border-top-color: #BFFF00;
+
+    box-shadow: 0 10px 22px rgba(0, 59, 100, 0.18);
+}
+
+.tarjeta h3 {
+    margin-top: 5px;
+
+    color: #075985;
+    font-size: 20px;
+}
+
+.tarjeta p {
+    color: #263746;
+    font-size: 15px;
+}
+
+.tarjeta img {
+    display: block;
+
+    width: 100%;
+    max-width: 220px;
+    height: 160px;
+
+    margin: 12px auto;
+
+    object-fit: contain;
+
+    border: none;
+    border-radius: 8px;
+    box-shadow: none;
+
+    transition: transform 0.3s ease;
+}
+
+.tarjeta img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+   13. GALERÍA DE FOTOGRAFÍAS
+   ===================================================== */
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 22px;
+
+    margin: 25px auto;
+}
+
+.foto-galeria {
+    flex: 0 1 270px;
+    max-width: 270px;
+
+    padding: 10px;
+
+    background-color: #FFFFFF;
+
+    border: 2px solid #D7E8F3;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 59, 100, 0.10);
+
+    transition: transform 0.3s ease;
+}
+
+.foto-galeria:hover {
+    transform: translateY(-5px);
+}
+
+.foto-galeria img {
+    display: block;
+
+    width: 100%;
+    height: 190px;
+
+    margin: 0 auto;
+
+    object-fit: cover;
+
+    border: none;
+    border-radius: 7px;
+}
+
+
+/* =====================================================
+   14. NUESTRA HISTORIA
+   FOTOGRAFÍA CENTRADA Y DE TAMAÑO PROPORCIONADO
+   ===================================================== */
+
+.foto-historia,
+.imagen-historia {
+    display: block;
+
+    width: 100%;
+    max-width: 420px;
+
+    height: auto;
+    max-height: 360px;
+
+    margin: 25px auto;
+    padding: 5px;
+
+    object-fit: contain;
+    object-position: center;
+
+    background-color: #FFFFFF;
+
+    border: 2px solid #00A8FF;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 14px rgba(0, 59, 100, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.foto-historia:hover,
+.imagen-historia:hover {
+    transform: scale(1.02);
+
+    box-shadow: 0 8px 18px rgba(0, 59, 100, 0.20);
+}
+
+
+/* =====================================================
+   15. SOLIDARIDAD Y AYUDA POR EL SISMO
+   ===================================================== */
+
+.seccion-solidaria {
+    background-color: #F0F9FF;
+
+    border-color: #D7E8F3;
+    border-left-color: #00A8FF;
+}
+
+.seccion-solidaria h2 {
+    color: #075985;
+}
+
+.seccion-solidaria h3 {
+    color: #003B64;
+}
+
+.subtitulo {
+    max-width: 850px;
+
+    margin: 15px auto;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   16. PORTADA SOLIDARIA
+   ===================================================== */
+
+.portada-solidaria {
+    width: 92%;
+    max-width: 1150px;
+
+    margin: 30px auto;
+    padding: 30px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #FFFFFF,
+        #EAF7FF
+    );
+
+    border: 2px solid #00A8FF;
+    border-top: 7px solid #BFFF00;
+
+    border-radius: 16px;
+
+    box-shadow: 0 7px 20px rgba(0, 59, 100, 0.12);
+}
+
+.portada-solidaria h1,
+.portada-solidaria h2 {
+    color: #075985;
+    line-height: 1.4;
+}
+
+.portada-solidaria h1 {
+    font-size: 30px;
+}
+
+.portada-solidaria > p {
+    color: #003B64;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.texto-portada {
+    max-width: 900px;
+
+    margin: 22px auto;
+    padding: 20px;
+
+    color: #263746;
+
+    background-color: #FFFFFF;
+
+    border-left: 6px solid #BFFF00;
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+.texto-portada p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   17. FOTOGRAFÍAS DE SOLIDARIDAD
+   ===================================================== */
+
+.fotos-portada {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 22px;
+
+    margin: 25px auto;
+}
+
+.fotos-portada img {
+    display: block;
+
+    width: 100%;
+    max-width: 280px;
+    height: 190px;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+    object-position: center;
+
+    background-color: #FFFFFF;
+
+    border: 2px solid #00A8FF;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 14px rgba(0, 59, 100, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.fotos-portada img:hover {
+    transform: scale(1.04);
+
+    box-shadow: 0 8px 18px rgba(0, 59, 100, 0.20);
+}
+
+
+/* =====================================================
+   18. BLOQUES DE SOLIDARIDAD Y PREVENCIÓN
+   ===================================================== */
+
+.bloque {
+    width: 92%;
+    max-width: 1100px;
+
+    margin: 28px auto;
+    padding: 30px;
+
+    background-color: rgba(255, 255, 255, 0.97);
+
+    border: 2px solid #D7E8F3;
+    border-left: 7px solid #BFFF00;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 16px rgba(0, 59, 100, 0.10);
+}
+
+.bloque h2 {
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+
+    color: #075985;
+    font-size: 28px;
+
+    text-align: center;
+
+    border-bottom: 3px solid #00A8FF;
+}
+
+.bloque h3 {
+    color: #003B64;
+}
+
+.bloque p,
+.bloque li {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.bloque ul,
+.texto-portada ul,
+.portada-solidaria ul {
+    margin: 15px 0 20px 25px;
+    padding-left: 15px;
+}
+
+.bloque li,
+.texto-portada li,
+.portada-solidaria li {
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   19. IMÁGENES DE LAS SECCIONES SOLIDARIAS
+   ===================================================== */
+
+.imagen-seccion,
+.imagen-central {
+    display: block;
+
+    width: 200%;
+    max-width: 340px;
+
+    height: auto;
+    max-height: 300px;
+
+    margin: 25px auto;
+
+    object-fit: contain;
+    object-position: center;
+
+    background-color: #FFFFFF;
+
+    border: 2px solid #00A8FF;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 59, 100, 0.12);
+
+    transition: transform 0.3s ease;
+}
+
+.imagen-seccion:hover,
+.imagen-central:hover {
+    transform: scale(1.03);
+}
+
+
+/* =====================================================
+   20. VIDEOS SOLIDARIOS
+   ===================================================== */
+
+.contenedor-videos,
+.cuadricula-videos {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+
+    margin: 25px auto;
+}
+
+.video-tarjeta {
+    flex: 1 1 300px;
+
+    width: 100%;
+    max-width: 450px;
+
+    margin: 15px auto;
+    padding: 20px;
+
+    background-color: #FFFFFF;
+
+    border: 2px solid #00A8FF;
+    border-top: 6px solid #BFFF00;
+
+    border-radius: 13px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 14px rgba(0, 59, 100, 0.10);
+}
+
+.video-tarjeta h3 {
+    margin-top: 0;
+    color: #075985;
+}
+
+.video-tarjeta video,
+.bloque video,
+video.video-solidario {
+    display: block;
+
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+
+    margin: 20px auto;
+
+    background-color: #000000;
+
+    border: none;
+    border-radius: 8px;
+}
+
+.contenedor-iframe {
+    width: 100%;
+    max-width: 760px;
+
+    margin: 15px auto;
+
+    overflow: hidden;
+
+    background-color: #EAF7FF;
+}
+
+.contenedor-iframe object {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: 350px;
+
+    border: none;
+}
+
+.frase-solidaria {
+    margin-top: 25px;
+    padding: 20px;
+
+    background-color: #EAF7FF;
+
+    border-left: 6px solid #BFFF00;
+
+    text-align: center;
+}
+
+.frase-solidaria p {
+    margin: 5px;
+
+    color: #075985;
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   21. AVISOS IMPORTANTES
+   ===================================================== */
+
+.aviso {
+    margin-top: 22px;
+    padding: 18px;
+
+    background-color: #F4FFCF;
+
+    border-left: 6px solid #00A8FF;
+    border-radius: 8px;
+}
+
+
+/* =====================================================
+   22. MOCHILA DE EMERGENCIA
+   ===================================================== */
+
+#mochila ul {
+    max-width: 750px;
+
+    margin: 20px auto;
+    padding-left: 35px;
+}
+
+#mochila li {
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   23. UBICACIÓN Y HORARIO
+   ===================================================== */
+
+#ubicacion {
+    background-color: #FFFFFF;
+}
+
+#ubicacion p {
+    text-align: center;
+}
+
+.horario {
+    max-width: 650px;
+
+    margin: 20px auto;
+    padding: 20px 25px 20px 45px;
+
+    background-color: #F0F9FF;
+
+    border-left: 6px solid #00A8FF;
+    border-radius: 8px;
+}
+
+.horario li {
+    margin: 8px 0;
+}
+
+
+/* =====================================================
+   24. CONTACTO Y REDES SOCIALES
+   ===================================================== */
+
+#contacto {
+    background-color: #FFFFFF;
+    border-top: 6px solid #00A8FF;
+}
+
+#contacto > p {
+    text-align: center;
+}
+
+.datos-contacto {
+    width: 100%;
+    max-width: 750px;
+
+    margin: 20px auto 0;
+    padding: 20px 25px;
+
+    background-color: #EAF7FF;
+
+    border: 1px solid #D7E8F3;
+    border-radius: 10px;
+}
+
+.datos-contacto p {
+    padding: 8px 0;
+
+    border-bottom: 1px solid #C8E1EF;
+
+    overflow-wrap: anywhere;
+}
+
+.datos-contacto p:last-child {
+    border-bottom: none;
+}
+
+.datos-contacto strong {
+    color: #003B64;
+}
+
+.datos-contacto a {
+    color: #075985;
+    font-weight: bold;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+
+    margin: 20px auto;
+}
+
+.redes-sociales img {
+    display: block;
+
+    width: auto;
+    max-width: 100px;
+    max-height: 70px;
+
+    margin: 8px;
+
+    object-fit: contain;
+
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.08);
+}
+
+
+/* =====================================================
+   25. MÉTODOS DE PAGO
+   IMAGEN MEDIANA Y CENTRADA
+   ===================================================== */
+
+.metodos-pago {
+    width: 100%;
+    max-width: 500px;
+
+    margin: 30px auto;
+    padding: 28px;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.98);
+
+    border: 2px solid #00A8FF;
+    border-top: 7px solid #BFFF00;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 16px rgba(0, 59, 100, 0.12);
+}
+
+.metodos-pago h2 {
+    color: #075985;
+    font-size: 29px;
+}
+
+.descripcion-pagos,
+.nota-pagos {
+    max-width: 750px;
+
+    margin: 15px auto;
+
+    color: #263746;
+    line-height: 1.8;
+}
+
+/* Imagen de métodos de pago */
+.imagen-pagos {
+    display: block;
+
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+
+    margin: 25px auto;
+    padding: 5px;
+
+    object-fit: contain;
+    object-position: center;
+
+    background-color: #FFFFFF;
+
+    border: 2px solid #00A8FF;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 59, 100, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.imagen-pagos:hover {
+    transform: scale(1.015);
+
+    box-shadow: 0 8px 20px rgba(0, 59, 100, 0.20);
+}
+
+.nota-pagos {
+    padding: 14px;
+
+    color: #003B64;
+
+    background-color: #F4FFCF;
+
+    border-left: 5px solid #00A8FF;
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   26. FORMULARIOS DE CONTACTO
+   ===================================================== */
+
+form {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 25px auto;
+    padding: 25px;
+
+    background-color: #FFFFFF;
+
+    border: 2px solid #00A8FF;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 59, 100, 0.10);
+}
+
+label {
+    display: block;
+
+    margin: 12px 0 5px;
+
+    color: #003B64;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 15px;
+    padding: 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+
+    border: 1px solid #A9C9D9;
+    border-radius: 6px;
+
+    background-color: #FFFFFF;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #00A8FF;
+    border-color: #075985;
+}
+
+
+/* =====================================================
+   27. TABLAS
+   ===================================================== */
+
+table {
+    width: 100%;
+
+    margin: 20px auto;
+
+    border-collapse: collapse;
+
+    background-color: #FFFFFF;
+}
+
+th,
+td {
+    padding: 12px;
+
+    border: 1px solid #C7DCE5;
+
+    text-align: left;
+}
+
+th {
+    color: #FFFFFF;
+    background-color: #075985;
+}
+
+tr:nth-child(even) {
+    background-color: #EAF7FF;
+}
+
+
+/* =====================================================
+   28. PIE DE PÁGINA
+   ===================================================== */
+
+#pie,
+footer,
+.pie-solidario {
+    width: 100%;
+
+    margin-top: 30px;
+    padding: 28px 20px;
+
+    color: #FFFFFF;
+
+    background: linear-gradient(
+        120deg,
+        #003B64,
+        #075985,
+        #00A8FF
+    );
+
+    border-top: 7px solid #BFFF00;
+
+    text-align: center;
+}
+
+#pie h3 {
+    margin-top: 0;
+
+    color: #BFFF00;
+
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+#pie p,
+footer p,
+.pie-solidario p {
+    margin: 8px 0;
+    color: #FFFFFF;
+}
+
+#pie a,
+footer a,
+.pie-solidario a {
+    color: #D7FF00;
+    font-weight: bold;
+}
+
+#pie a:hover,
+footer a:hover,
+.pie-solidario a:hover {
+    color: #FFFFFF;
+}
+
+
+/* =====================================================
+   29. COMPATIBILIDAD CON LA PÁGINA DE SOLIDARIDAD
+   ===================================================== */
+
+body.pagina-solidaridad,
+#pagina-solidaridad {
+    background-color: #EAF7FF;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(7, 89, 133, 0.08) 1px,
+            transparent 1.5px
+        ),
+        repeating-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.45) 0,
+            rgba(255, 255, 255, 0.45) 2px,
+            transparent 2px,
+            transparent 16px
+        );
+
+    background-size: 20px 20px, 100% 100%;
+}
+
+.pagina-solidaridad #contenido {
+    background-color: transparent;
+}
+
+.pagina-solidaridad .seccion {
+    background-color: #FFFFFF;
+}
+
+.pagina-solidaridad #contenido img {
+    max-width: 100%;
+}
+
+.pagina-solidaridad .tarjeta img,
+.pagina-solidaridad .tarjeta-solidaria img {
+    width: 100%;
+    max-width: 200px;
+    height: 160px;
+
+    margin: 10px auto;
+
+    object-fit: contain;
+
+    border: none;
+    box-shadow: none;
+}
+
+.pagina-solidaridad .imagen-seccion {
+    width: 280px;
+    max-width: 90%;
+    max-height: 260px;
+}
+
+.pagina-solidaridad .texto-portada p,
+#pagina-solidaridad .texto-portada p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.pagina-solidaridad .bloque {
+    background-color: rgba(255, 255, 255, 0.97);
+}
+
+#pagina-solidaridad .bloque h2 {
+    color: #075985;
+}
+
+#pagina-solidaridad .tarjeta {
+    border-left: 5px solid #00A8FF;
+}
+
+#pagina-solidaridad .tarjeta h3 {
+    color: #075985;
+}
+
+#pagina-solidaridad .imagen-seccion {
+    max-width: 100%;
+    max-height: 280px;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   30. DISEÑO PARA TABLETAS
+   ===================================================== */
+
+@media screen and (max-width: 1000px) {
+
+    .cabecera-contenido {
+        gap: 18px;
+    }
+
+    .logo {
+        flex: 0 0 160px;
+    }
+
+    .logo img {
+        width: 160px;
+    }
+
+    .titulo h1 {
+        font-size: 30px;
+    }
+
+    .foto-portada {
+        flex: 0 1 280px;
+    }
+
+    .foto-portada img {
+        max-width: 280px;
+        height: 200px;
+    }
+
+    #menu a {
+        padding: 11px 13px;
+        font-size: 14px;
+    }
+
+    .imagen-pagos {
+        max-width: 750px;
+    }
+}
+
+
+/* =====================================================
+   31. DISEÑO PARA CELULARES
+   ===================================================== */
+
+@media screen and (max-width: 700px) {
+
+    body {
+        font-size: 15px;
+        background-attachment: scroll;
+    }
+
+    #encabezado {
+        padding: 20px 12px;
+    }
+
+    .cabecera-contenido {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .titulo {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .titulo h1 {
+        font-size: 28px;
+        letter-spacing: 0;
+    }
+
+    .titulo p {
+        font-size: 15px;
+    }
+
+    .foto-portada {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .foto-portada img {
+        width: 100%;
+        max-width: 420px;
+        height: 230px;
+    }
+
+    #menu {
+        padding: 5px;
+        gap: 3px;
+    }
+
+    #menu ul {
+        flex-direction: column;
+    }
+
+    #menu li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    }
+
+    #menu a {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    #contenido,
+    main,
+    .contenido,
+    .contenedor {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .seccion,
+    .bloque,
+    .texto,
+    .bienvenida {
+        margin: 18px auto;
+        padding: 18px;
+    }
+
+    .seccion h2,
+    .bloque h2 {
+        font-size: 24px;
+    }
+
+    .bienvenida h2 {
+        font-size: 26px;
+    }
+
+    .portada-principal {
+        min-height: 280px;
+        padding: 20px 12px;
+    }
+
+    .titulo-portada {
+        font-size: 26px;
+    }
+
+    .logo-portada {
+        width: 150px;
+    }
+
+    .portada-solidaria {
+        width: 94%;
+        margin: 18px auto;
+        padding: 18px;
+    }
+
+    .portada-solidaria h1 {
+        font-size: 25px;
+    }
+
+    .fotos-portada {
+        gap: 15px;
+    }
+
+    .fotos-portada img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        max-height: 250px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .tarjeta {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .foto-historia,
+    .imagen-historia {
+        width: 100%;
+        max-width: 340px;
+        max-height: 300px;
+        margin: 20px auto;
+    }
+
+    .imagen-seccion,
+    .imagen-central {
+        width: 100%;
+        max-width: 300px;
+        max-height: 250px;
+    }
+
+    .contenedor-videos,
+    .cuadricula-videos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-tarjeta {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .video-tarjeta video,
+    .bloque video,
+    video.video-solidario {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor-iframe object {
+        height: 230px;
+    }
+
+    .foto-galeria {
+        flex: 1 1 100%;
+        max-width: 350px;
+    }
+
+    .foto-galeria img {
+        height: 200px;
+    }
+
+    .horario {
+        padding: 18px 20px 18px 35px;
+    }
+
+.metodos-pago {
+    width: 100%;
+    padding: 18px;
+}
+
+.metodos-pago h2 {
+    font-size: 24px;
+}
+
+.imagen-pagos {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    height: 300;
+    margin: 20px auto;
+    object-fit: contain;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+    .datos-contacto {
+        padding: 15px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    footer,
+    #pie,
+    .pie-solidario {
+        padding: 20px 12px;
+    }
+}
+
+
+/* =====================================================
+   32. RESPETO A LAS PREFERENCIAS DE ANIMACIÓN
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* SEPARACIÓN Y LEGIBILIDAD DE LOS PÁRRAFOS */
+
+.seccion p {
+    line-height: 1.8;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* PRESENTACIÓN DE LA FRASE PRINCIPAL */
+
+.seccion p.frase {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px;
+}
+/* ====================================== */
+/* PIE DE PÁGINA - EL PANAMEÑITO 07       */
+/* ====================================== */
+
+#pie {
+    background-color: #1a2a4a;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pie h3 {
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+}
+
+#pie p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+#pie a {
+    color: #ffd54f;
+    text-decoration: none;
+}
+
+#pie a:hover {
+    text-decoration: underline;
+}
+
+/* CONTADOR DE VISITAS */
+
+.contador-visitas {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.contador-visitas h3 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contador-visitas img {
+    width: auto;
+    height: auto;
+    border: none;
+}
+
+/* PIE DE PAGINA */
+
+#pie {
+    text-align: center;
+    padding: 25px;
+}
+
+.contador-visitas {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.contador-visitas h3 {
+    color: #49fb29;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contador-visitas img {
+    border: none;
+    width: auto;
+    height: auto;
+}
+.contador-visitas img {
+    max-width: 100%;
+    height: auto;
+    margin: 8px 0 12px 0;
+}
+
+/* CONTADOR DE VISITAS */
+#contador-visitas {
+    text-align: center;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+#contador-visitas img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+/* Adaptación para celulares */
+
+@media screen and (max-width: 480px) {
+
+    #reproductor-musica {
+        width: 250px;
+        height: 250px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    #reproductor-musica iframe {
+        height: 250px;
+    }
+
+}
